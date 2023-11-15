@@ -4,17 +4,17 @@
 <!--      <img src="@/assets/img/logo_white.png" alt="logo图">-->
       <img src="@/assets/img/jqmy_logo.png" alt="logo图">
     </div>
-    <p class="title">晋强木业有限公司官网</p>
+    <p class="title">钟磊家居有限公司官网</p>
     <p class="address_tel_fax">
-      <span>工厂体验馆地址：山西省朔州市怡东路与怡北街交叉口东北100米</span>
+      <span>工厂体验馆地址：河北省三河市abc路222号</span>
       <span>Tel：888-888-888</span>
       <span>Fax：8888-88888888</span>
     </p>
     <p class="email_wx">
-      <span>邮箱：liyunkun_11@163.com</span>
-      <span>公司微信号：ilyk_gg</span>
+      <span>邮箱：zhonglei123@qq.com</span>
+      <span>公司微信号：zhonglei123</span>
     </p>
-    <p class="copy">Copyright &copy; 2018 - 2019 晋强木业</p>
+    <p class="copy">Copyright &copy; 2018 - 2019 钟磊家居</p>
   </div>
 </template>
 <script>

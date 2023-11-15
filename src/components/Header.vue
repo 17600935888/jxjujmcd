@@ -5,8 +5,8 @@
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone">&nbsp;888-888-888</span>
-          <span class="glyphicon glyphicon-envelope">&nbsp;liyunkun_11@163.com</span>
+          <span class="glyphicon glyphicon-earphone">&nbsp;0314-8814315</span>
+          <span class="glyphicon glyphicon-envelope">&nbsp;zhonglei123@qq.com</span>
           <span class="glyphicon glyphicon-time">&nbsp;7x24小时为您服务</span>
         </div>
         <div class="shejiao pull-right">
@@ -110,7 +110,7 @@ export default {
         },
         {
           // name: "相关服务",
-          name: "晋强木作",
+          name: "钟磊家具建材",
           path: "/service",
           children: []
         },
