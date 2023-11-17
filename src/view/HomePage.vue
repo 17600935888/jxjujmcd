@@ -253,7 +253,7 @@ export default {
         {
           logo: require("@/assets/img/tel.png"),
           title: "核心优势1",
-          content: "<p>由专业客服提供人工服务</p>负责疑难问题和故障受理"
+          content: "<p>由专业客服提供人工服务</p>负责售前咨询"
         },
         {
           logo: require("@/assets/img/computer.png"),
@@ -263,12 +263,12 @@ export default {
         {
           logo: require("@/assets/img/qq.png"),
           title: "核心优势3",
-          content: "<p>利用企业QQ提供在线解答</p>帮助企业快速准确解决问题和故障"
+          content: "<p>利用QQ及微信提供在线解答</p>1对1提供客户服务"
         },
         {
           logo: require("@/assets/img/skill.png"),
           title: "核心优势4",
-          content: "<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理"
+          content: "<p>有专业的维修团队保驾护航</p>提供至多5年的售后保修"
         }
       ]
     };
