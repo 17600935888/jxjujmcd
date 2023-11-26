@@ -6,7 +6,7 @@
     </div>
     <p class="title">钟磊家居有限公司官网</p>
     <p class="address_tel_fax">
-      <span>工厂体验馆地址：河北省三河市abc路222号</span>
+    <span>工厂体验馆地址：河北省廊坊市三河县钟磊家具有限公司</span>
       <span>Tel：888-888-888</span>
       <span>Fax：8888-88888888</span>
     </p>

@@ -94,32 +94,32 @@ export default {
           path: "/",
           children: []
         },
-        {
-          name: "产品中心",
-          path: "/software",
-          children: [
-            // {
-            //   name: "宣传片",
-            //   path: "/software/smartTown"
-            // },
-            // {
-            //   name: "招贤纳士",
-            //   path: "/software/bigData"
-            // }
-          ]
-        },
+        // {
+        //   name: "产品中心",
+        //   path: "/software",
+        //   children: [
+        //     // {
+        //     //   name: "宣传片",
+        //     //   path: "/software/smartTown"
+        //     // },
+        //     // {
+        //     //   name: "招贤纳士",
+        //     //   path: "/software/bigData"
+        //     // }
+        //   ]
+        // },
         {
           // name: "相关服务",
           name: "钟磊家具建材",
           path: "/service",
           children: []
         },
-        {
-          // name: "新闻动态",
-          name: "工程案例",
-          path: "/newsinformation",
-          children: []
-        },
+        // {
+        //   // name: "新闻动态",
+        //   name: "工程案例",
+        //   path: "/newsinformation",
+        //   children: []
+        // },
         {
           // name: "公司介绍",
           name: "关于我们",

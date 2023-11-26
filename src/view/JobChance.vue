@@ -3,24 +3,28 @@
     <div class="banner container-fuild text-center">工作机会</div>
     <div class="container">
       <div class="JobChance-container wow pulse">
-        <h2>PHP工程师</h2>
+        <h2>家具销售顾问</h2>
         <p>岗位职责</p>
         <ol>
-          <li>负责公司产品及项目系统的功能开发、代码优化；</li>
-          <li>负责项目组人员任务的分配与监督，及时解决项目技术问题；</li>
-          <li>参与系统需求分析与设计，并负责完成PHP核心代码，接口规范制定，架构设计。</li>
+          <li>负责家具（桌椅）产品的销售工作，完成销售任务；</li>
+          <li>通过电话、网络等渠道与客户进行沟通，了解客户需求，提供专业的产品推荐和解决方案；</li>
+          <li>维护客户关系，定期与客户进行回访，提供优质的售后服务；</li>
+          <li>参与市场调研，了解行业动态和竞争对手情况，为公司制定销售策略提供参考；</li>
+          <li>协助上级领导完成其他相关工作。</li>
         </ol>
         <p>任职要求</p>
         <ol>
-          <li>精通PHP+MySql+Apache开发，精通使用JavaScript、AJAX、JQuery等技术；3年以上WEB应用程序开发经验， 有大型网站或电子商务网站工作经验者优先；</li>
-          <li>熟悉jQuery，具有AJAX、HTML、CSS、JAVASCRIPT等方面的开发经验；</li>
-          <li>熟悉PHP模板技术、框架技术及设计模式，有php框架系统进行开发经验者优先，如：phpcms，dedecms等；</li>
-          <li>精通数据库原理，精通MYSQL、了解Mongo等并有相关关系数据库设计开发经验, 了解Mysql的数据库配置管理、性能优化；</li>
-          <li>熟悉常见的数据结构和算法，具备良好的编程习惯及较强的文档编写能力；</li>
-          <li>熟悉各种WEB缓存技术,熟悉大型网站构架和性能优化；</li>
-          <li>对网站系统架构的部署、搭建、优化、排错等方面有丰富经验，对高负载、大访问量情况下的系统架构有经验者优先。</li>
+          <li>大专及以上学历，市场营销、家具设计等相关专业优先；</li>
+          <li>具备一定的家具销售经验，熟悉家具市场和产品特点；</li>
+          <li>具备良好的沟通能力和销售技巧，能够与客户建立良好的合作关系；</li>
+          <li>具备较强的学习能力和团队合作精神，能够适应快节奏的工作环境；</li>
+          <li>具备较强的市场分析和判断能力，能够根据市场需求制定销售策略；</li>
+          <li>熟练使用办公软件，如Word、Excel等。</li>
         </ol>
-        <button class="center-block btn btn-warning btn-lg">投递简历</button>
+        <button class="center-block btn btn-warning btn-lg"  @click="showImage = !showImage">投递简历</button>
+        <div v-if="showImage" class="overlay" @click="showImage = false">
+          <img src="@/assets/img/wechat.jpg" alt="Image" class="qr-code" />
+        </div>
       </div>
     </div>
   </div>
@@ -30,7 +34,9 @@ import { WOW } from 'wowjs';
 export default {
   name: "JobChance",
   data() {
-    return {};
+    return {
+      showImage: false
+    };
   },
   mounted(){
     var wow = new WOW();
@@ -80,6 +86,22 @@ font-size: 20px;
     padding: 20px;
     border: 1px dashed salmon;
   }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code {
+  max-width: 50%;
+  max-height: 50%;
 }
 </style>
 

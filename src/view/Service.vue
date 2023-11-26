@@ -1,7 +1,7 @@
 <template>
     <div id="Service">
         <div class="container text-center">
-            <h3>我们的服务</h3>
+            <h3>我们的产品</h3>
             <p style="color:#b2b2b2">The Best Service You Never See</p>
         </div>
         <div class="container">
@@ -33,22 +33,22 @@ export default {
             serviceList: [
                 {
                     id: 'section-1',
-                    title: '软件定制开发',
+                    title: '餐厅实木类',
                     eng_title: 'Customize App',
                     img: require('@/assets/img/service1.jpg')
                 },{
                     id: 'section-2',
-                    title: 'IT外包服务',
+                    title: '温馨厅室类',
                     eng_title: 'Outsourcing',
                     img: require('@/assets/img/service2.jpg')
                 },{
                     id: 'section-3',
-                    title: '网上商城建设',
+                    title: '舒适办公类',
                     eng_title: 'eCommerce Site',
                     img: require('@/assets/img/service3.jpg')
                 },{
                     id: 'section-4',
-                    title: 'iOS应用定制开发',
+                    title: '超高性价比',
                     eng_title: 'iOS App Dev',
                     img: require('@/assets/img/service4.jpg')
                 }
