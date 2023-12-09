@@ -16,25 +16,24 @@
               </div>
               <div class="row">
                 <div class="item">
-                  <div class="col-sm-12 text-center">
-                    <img src="@/assets/img/wechat_icon.png" alt="WeChat Icon"  class="connect_icon"/>
-                    <p class="text">19876567898   (工作日：8:00~18:00)</p>
-                  </div>
+                  <img src="@/assets/img/wechat_icon.png" alt="Phone Icon" class="icon" />
+                  <p class="text">19876567898</p>
                 </div>
+               
               </div>
               <div class="row">
                 <div class="item">
-                  <div class="col-sm-12 text-center">
-                    <p><img src="@/assets/img/qq_icon.jpeg" alt="QQ Icon"  class="connect_icon"/>178953654</p>
-                  </div>
+                  <img src="@/assets/img/qq_icon.jpeg" alt="Phone Icon" class="icon" />
+                  <p class="text">19876567898</p>
                 </div>
+               
               </div>
               <div class="row">
                 <div class="item">
-                  <div class="col-sm-12 text-center">
-                    <p><img src="@/assets/img/email_icon.jpeg" alt="Email Icon"  class="connect_icon"/>178953654@qq.com</p>
-                  </div>
+                  <img src="@/assets/img/email_icon.jpeg" alt="Phone Icon" class="icon" />
+                  <p class="text">19876567898@qq.com</p>
                 </div>
+               
               </div>
             </div>
           </div>
@@ -107,17 +106,19 @@ export default {
   }
 }
 .text-center {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 20px;
 }
-.connect_icon {
+/* .connect_icon {
   width: 30px;
   height: 25px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 0;
   margin-right: auto;
-}
+} */
 .item {
+  height: 50px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #000;
@@ -125,8 +126,9 @@ export default {
 
 .icon {
   width: 30px;
-  height: 30px;
+  height: 25px;
   margin-right: 10px;
+  margin-bottom: 0%;
 }
 
 .text {
