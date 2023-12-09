@@ -49,55 +49,12 @@
           class="btn btn-default btn-sm"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
           onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
-        >联系我们</button>
+          @click="showImage = !showImage"
+          >联系我们</button>
         <div class="contactUs-contactWay">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <!-- 客户评价 -->
-    <div id="customer" class="container-fuild">
-      <div class="container customer-container">
-        <p class="customer-title text-center">客户评价</p>
-        <div class="swiper-container customer-swiper hidden-xs">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide customer-block"
-              v-for="(item,index) in customerList"
-              :key="index"
-            >
-              <div class="customer-logo">
-                <img class="center-block" :src="item.logo" alt="logo">
-              </div>
-              <div class="customer-yh">
-                <img src="@/assets/img/yinhao.png" alt="引号">
-              </div>
-              <div class="customer-content1">
-                <small>{{item.content}}</small>
-              </div>
-              <div class="customer-content2">{{item.title}}</div>
-            </div>
-          </div>
-          <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <div class="row visible-xs customer-block">
-          <div class="col-xs-12" v-for="(item,index) in customerList" :key="index">
-            <div class="customer-logo">
-              <img class="center-block" :src="item.logo" alt="logo">
-            </div>
-            <div class="customer-yh">
-              <img src="@/assets/img/yinhao.png" alt="引号">
-            </div>
-            <div class="customer-content1">
-              <small>{{item.content}}</small>
-            </div>
-            <div class="customer-content2">
-              <small>{{item.title}}</small>
-            </div>
+          <!-- <button class="center-block btn btn-warning btn-lg"  @click="showImage = !showImage">投递简历</button> -->
+          <div v-if="showImage" class="overlay" @click="showImage = false">
+            <img src="@/assets/img/wechat.jpg" alt="Image" class="qr-code" />
           </div>
         </div>
       </div>
@@ -142,6 +99,7 @@ export default {
   name: "HomePage",
   data() {
     return {
+      showImage: false,
       swiperList: [
         {
           // img: require("@/assets/img/banner1.png"),
@@ -167,86 +125,6 @@ export default {
           path: "",
           // title: '您身边的IT专家4',
           // content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
-        }
-      ],
-      customerList: [
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title: "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content: "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title: "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content: "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_toyota.png"),
-          title: "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content: "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_toyota.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_toyota.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
         }
       ],
       serverList: [
@@ -335,6 +213,22 @@ export default {
 /* 整体盒子 */
 #HomePage {
   width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 /* 轮播图 */
