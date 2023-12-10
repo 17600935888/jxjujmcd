@@ -59,28 +59,28 @@ export default {
           title: "餐厅实木类",
           eng_title: "Dining solid wood",
           content:
-            "<h3>这是标题1</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p><h3>这是标题2</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p>"
+          "<div style='display: flex; justify-content: space-between; margin-bottom:15px;' class='image-container'><img style='height: 400px; width: 400px;' src='" + require("@/assets/img/cantk1.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/cantk2.jpeg") + "' alt='Image' class='my-img' /></div><div  style='display: flex; justify-content: space-between;'  class='image-container'><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/cantk3.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/bangongyi4.jpeg") + "' alt='Image' class='my-img' /></div>"
         },
         {
           id: "section-2",
           title: "温馨客厅类",
           eng_title: "Cozy living room",
           content:
-            "<h3>这是标题1</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p><h3>这是标题2</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p>"
+          "<div style='display: flex; justify-content: space-between; margin-bottom:15px;' class='image-container'><img style='height: 400px; width: 400px;' src='" + require("@/assets/img/ketk1.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/ketk2.jpeg") + "' alt='Image' class='my-img' /></div><div  style='display: flex; justify-content: space-between;'  class='image-container'><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/ketk3.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/ketk4.jpeg") + "' alt='Image' class='my-img' /></div>"
         },
         {
           id: "section-3",
           title: "舒适办公类",
           eng_title: "Comfortable office",
           content:
-            "<h3>这是标题1</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p><h3>这是标题2</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p>"
+          "<div style='display: flex; justify-content: space-between; margin-bottom:15px;' class='image-container'><img style='height: 400px; width: 400px;' src='" + require("@/assets/img/bangongyi1.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/bangongyi2.jpeg") + "' alt='Image' class='my-img' /></div><div  style='display: flex; justify-content: space-between;'  class='image-container'><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/bangongyi3.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/bangongyi4.jpeg") + "' alt='Image' class='my-img' /></div>"
         },
         {
           id: "section-4",
           title: "超高性价比",
           eng_title: "Cost-effective",
           content:
-            "<h3>这是标题1</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p><h3>这是标题2</h3><p>这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。这里是内容，请根据实际需要修改。</p>"
+          "<div style='display: flex; justify-content: space-between; margin-bottom:15px;' class='image-container'><img style='height: 400px; width: 400px;' src='" + require("@/assets/img/jmdj1.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/jmdj2.jpeg") + "' alt='Image' class='my-img' /></div><div  style='display: flex; justify-content: space-between;'  class='image-container'><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/jmdj3.jpeg") + "' alt='Image' class='my-img' /><img  style='height: 400px; width: 400px;' src='" + require("@/assets/img/jmdj4.jpeg") + "' alt='Image' class='my-img' /></div>"
         }
       ]
     };
@@ -100,6 +100,14 @@ export default {
 };
 </script>
 <style scoped>
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+.my-img {
+  width: 200px;
+  height: 200px;
+}
 .banner {
   color: #fff;
   font-size: 30px;
